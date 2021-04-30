@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 7% 5%;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 5% 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 7% 0;
+}
+
+section {
+    padding: 0 5%;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.divide {
+    width: 30%;
+}
+
+.lines {
+    display: none;
+}
+
+button {
+    margin: 7%;
+    padding: 5% 12%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+
+/*Hero Section*/
+
+.hero {
+    position: relative;
+    background-image: url(./images/homepage/hero-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    z-index: -1;
+}
+
+.hero div {
+    padding-top: 40vh;
+}
+
+.logo {
+    width: 25%;
+}
+
+.hero p {
+    margin: 0% 5%;
+}
+
+
+/*Features Section*/
+
+.village {
+    position: absolute;
+    width: 90%;
+    top: 105%;
+    left: 5%;
+    z-index: 2;
+}
+
+.features {
+    margin: 40vh 0 15%
+}
+
+.locally {
+    margin: 20% 0 5%;
+}
+
+/*Menu Section*/
+.menu img {
+    margin: 20% 0 5%;
+}
+
+.dishes {
+    padding-bottom: 20%;
+}
+
+/*Events Section*/
+
+.events img {
+    margin: 20% 0 10%;
+}
+
+.family {
+    display: block;
+}
+
+.special {
+    display: none;
+}
+
+.social {
+    display: none;
+}
+
+.nav p {
+    color: #5c6779;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: 5%;
+}
+
+
+.nav .active {
+    color: #242b37;
+    position: relative;
+}
+
+.nav .active::after {
+    content: "";
+    height: 1px;
+    width: 15%;
+    background: #9e7f66;
+    position: absolute;
+    bottom: 0;
+    left: 42%
+}
+
+/*Reservation Section*/
+
+.reservation {
+    height: 40vh;
+    background-image: url(./images/homepage/ready-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.reservation div {
+    padding: 10% 0;
+}
+
+.reservation button {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 10% 5% 20%;
+}
+
+.footerLogo {
+    width: 25%;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1% 0;
+}
+
+.open {
+    margin-top: 10%
+}
+
+/*Others*/
+.tablet,
+.desktop {
+    display: none;
+}
+
+/**--------------------------------------------------------TABLET SIZE ------------------------
+**/
+
+
+@media(min-width:481px) {
+    * {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 7% 25%;
+
+    }
+
+    h2 {
+        font-size: 21px;
+        margin: 5% 25%;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 5% 25%;
+    }
+
+    .lines {
+        display: block;
+        width: 25%;
+        position: absolute;
+    }
+
+    .divide {
+        width: 15%;
+    }
+
+    .mobile,
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    /*Hero Section*/
+
+    .hero {
+        background-image: url(./images/homepage/hero-bg-tablet@2x.jpg);
+    }
+
+    /*Features Section*/
+
+    .features {
+        margin: 40% 0 15%;
+        position: relative;
+    }
+
+    .features .lines {
+        top: 57%;
+        right: 0;
+    }
+
+    /*Menu Section*/
+    .dish {
+        display: flex;
+        margin: 5% 0 5%;
+    }
+
+    .dish img {
+        margin: 0 auto;
+    }
+
+    .dish-description {
+        padding-left: 10%;
+    }
+
+    .dish-description h3 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .dish-description p {
+        text-align: left;
+    }
+
+
+    /*Events Section*/
+    .events {
+        position: relative;
+    }
+
+    .events .lines {
+        margin: 0;
+        top: -5%;
+        left: -2%;
+
+    }
+
+    .special {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    /*Reservation Section*/
+
+    .reservation {
+        height: 50vh;
+        background-image: url(./images/homepage/ready-bg-tablet@2x.jpg);
+    }
+
+
+    /*Footer*/
+
+    footer {
+        display: flex;
+    }
+
+    footer p {
+        font-size: 13px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .footerLogo {
+        width: 80%;
+        padding: 0 5%
+    }
+
+    .contact {
+        margin-left: 15%;
+    }
+
+    /*Others*/
+
+}
+
+
+@media(min-width:769px) {
+
+    * {
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 4% 25%;
+
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 5% 25%;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin: 5% 25%;
+    }
+
+    button {
+        margin: 5% auto;
+    }
+
+
+    /*Features Section*/
+
+    .village {
+        top: 115%;
+    }
+
+    .features {
+        margin: 50% 0 15%;
+    }
+
+    /*Reservation Section*/
+    .reservation {
+        height: 65vh;
+        background-image: url(./images/homepage/ready-bg-tablet@2x.jpg);
+    }
+
+    .reservation div {
+        padding: 5% 0;
+    }
+
+    .reservation h2 {
+        margin: 5% 0;
+    }
+
+}
+
+/**--------------------------------------------DESKTOPS------------------------------------------------------------------------------------------------**/
+
+@media (min-width: 1200px) {
+
+    * {
+        text-align: left;
+        font-size: 16px
+    }
+
+
+    h1 {
+        font-size: 50px;
+        margin: 5% 0%;
+
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 5% 0;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin: 5% 0;
+    }
+
+    button {
+        margin: 5% auto;
+    }
+
+    button:hover {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+    }
+
+
+    .mobile,
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block
+    }
+
+    /*Hero Section*/
+
+    .hero {
+        background-image: url(./images/homepage/hero-bg-desktop@2x.jpg);
+        background-position: right;
+    }
+
+    .hero div {
+        width: 50%;
+        padding-top: 0;
+        padding-right: 10%
+    }
+
+    .logo {
+        width: 20%;
+        padding: 10vh 0 15vh;
+    }
+
+    .hero p {
+        margin: 0 0 10%;
+    }
+
+    /*Features Section*/
+
+    .features {
+        position: static;
+    }
+
+    .village {
+        width: 40%;
+    }
+
+    .feature1 {
+        position: absolute;
+        top: 150vh;
+        right: 0;
+        width: 50%;
+        padding-right: 15%;
+    }
+
+    .local {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 2%;
+    }
+
+
+    .locally {
+        margin: 0;
+        width: 80%;
+
+
+    }
+
+    .feature2 {
+        width: 80%;
+        padding-right: 5%;
+
+    }
+
+    .features .lines {
+        top: 250%;
+        right: 0;
+        width: 20%
+    }
+
+    /*Menu Section*/
+
+    .menu {
+        display: flex;
+        padding: 15% 5% 5%;
+
+    }
+
+    .menu .divide {
+        margin: 0;
+    }
+
+    .highlights {
+        flex-basis: 1;
+        padding-right: 10%
+    }
+
+    .dishes {
+        flex-basis: 1;
+        padding: 0;
+    }
+
+    /*Events Section*/
+
+    .events {
+        display: flex;
+        margin: 10% 0 10%
+    }
+
+    .events div {
+        flex-basis: 100%;
+    }
+
+    .events img {
+        margin: 0
+    }
+
+    .events-descr {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 10%;
+    }
+
+    .special,
+    .social {
+        display: none
+    }
+
+    /*Reservation Section*/
+
+    .reservation {
+        height: 30vh;
+        background-image: url(./images/homepage/ready-bg-desktop@2x.jpg);
+    }
+
+    .reservation div {
+        display: flex;
+        height: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reservation h2 {
+        margin: 0;
+        text-align: center
+    }
+
+    .reservation button {
+        flex-basis: 20%;
+        height: 30%;
+        padding: 0 5%;
+        text-align: center;
+        margin: 5% 0 5% 15%
+    }
+
+    /*Footer Section*/
+    footer {
+        padding: 5% 0 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoDiv {
+        flex-basis: 30%;
+        text-align: center;
+    }
+
+    .footerLogo {
+        width: 40%;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-basis: 70%;
+        margin-left: 0
+    }
+
+    .openTimes {
+        margin-left: 10%;
+    }
+
+    .open {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+/*.locally {
+        position: static;
+}*/

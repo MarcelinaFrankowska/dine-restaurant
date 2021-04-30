@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+section {
+    padding: 0 5%
+}
+
+
+h1 {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 7% 5%;
+
+}
+
+.logo {
+    width: 25%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+button {
+    margin: 7%;
+    padding: 5% 12%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/*TOP SECTION*/
+
+.top {
+    height: 100vh;
+    position: relative;
+    background-image: url(./images/booking/hero-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
+}
+
+.top button {
+    background-color: transparent;
+}
+
+
+/*BOOKING SECTION */
+
+.section {
+    position: absolute;
+    height: 90vh;
+    width: 90%;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+.section .section-center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.container {
+    padding: 5%
+}
+
+.form {
+    height: 50vh;
+}
+
+.form-control {
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid #b6b7b9;
+    padding: 4% 0
+}
+
+input {
+    text-align: left;
+}
+
+.form-label {
+    color: #242b37;
+}
+
+.form-group p {
+    margin-bottom: 0;
+}
+
+p>span {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.form p span {
+    text-align: left;
+}
+
+span {
+    cursor: pointer;
+}
+
+.guests-counter {
+    text-align: left;
+}
+
+.number {
+    margin: 100px;
+}
+
+
+.guests {
+    height: 34px;
+    width: 90%;
+    text-align: center;
+    font-size: 19px;
+    border: 0px;
+    border-bottom: 2px solid #b6b7b9;
+    /*border: 1px solid #ddd;
+    border-radius: 4px;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.plus {
+    height: 10px;
+    width: 10px;
+}
+
+.minus {
+    height: 3px;
+    width: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 85vh;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.open {
+    padding: 10% 0
+}
+
+/**--------------------------------------------------------TABLET SIZE ------------------------
+**/
+
+
+@media(min-width:481px) {
+    * {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin: 7% 25%;
+
+    }
+
+    .logo {
+        margin-top: 10%;
+        width: 60%;
+    }
+
+    /*TOP SECTION */
+
+    .top {
+        height: 50vh;
+        position: relative;
+        background-image: url(./images/booking/hero-bg-tablet@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white
+    }
+
+    .topLogo {
+        text-align: left;
+        width: 30%;
+        max-width: 152px;
+
+    }
+
+    .reservations {
+        padding: 0 15%;
+    }
+
+    .top button {
+        display: none;
+    }
+
+    /*BOOKING SECTION */
+
+    .section {
+        height: 60vh;
+        width: 70%;
+        top: 40vh;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    .line {
+        display: flex;
+    }
+
+    .line .label {
+        flex-basis: 40%;
+    }
+
+
+    .line .control {
+        flex-basis: 60%
+    }
+
+    /*FOOTER*/
+
+    footer {
+        margin-top: 60vh;
+        display: flex;
+
+    }
+
+    .footerLogo {
+        flex-basis: 30%;
+        margin-top: 0;
+        padding-top: 50px
+    }
+
+    footer .logo {
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .contact {
+        flex-basis: 70%;
+    }
+
+    .adress {
+        padding-top: 50px
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+}
+
+
+@media(min-width:769px) {
+
+    /*TOP SECTION */
+
+    .top {
+        height: 70vh;
+
+    }
+
+    /*BOOKING SECTION */
+
+    .section {
+        top: 50;
+        height: 70vh;
+    }
+
+
+}
+
+
+/**--------------------------------------------DESKTOPS------------------------------------------------------------------------------------------------**/
+
+@media(min-width:1200px) {
+    * {
+        font-size: 16px;
+    }
+
+    /*TOP SECTION */
+
+    .top {
+        height: 60vh;
+        background-image: url(./images/booking/hero-bg-desktop@2x.jpg);
+    }
+
+    .reservations {
+        width: 50%;
+    }
+
+    /*BOOKING SECTION */
+
+    .section {
+        position: absolute;
+        height: 70vh;
+        width: 40%;
+        top: 15vh;
+        right: 0;
+        transform: none;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    .reservations {
+        padding: 0 5% 0 0
+    }
+
+    /*FOOTER*/
+
+    footer {
+        margin-top: 45vh;
+        padding: 5% 0% 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .footerLogo {
+        padding: 0;
+        flex-basis: 30%;
+    }
+
+    footer .logo {
+        width: 40%;
+        text-align: center;
+    }
+
+
+    .contact {
+        display: flex;
+        flex-basis: 70%;
+        margin-left: 0
+    }
+
+    .adress {
+        flex-basis: 50%;
+        margin-left: 10%;
+        padding: 0
+    }
+
+    .open {
+        flex-basis: 50%;
+        margin: 0;
+        padding: 0
+    }
+}
