@@ -62,9 +62,12 @@ button {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
+
 }
 
-
+.topBtn {
+    display: none;
+}
 
 /*Hero Section*/
 
